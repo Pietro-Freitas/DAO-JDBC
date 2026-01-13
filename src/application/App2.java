@@ -24,8 +24,13 @@ public class App2 {
         System.out.println("Inserted! new id: " + department.getId());
 
         System.out.println("=== Test 4: department delete ===");
-        Integer id = null;
+        Integer id = 6;
         departmentDao.deleteById(id);
         System.out.println("Deleted!");
+
+        System.out.println("=== Test 5: department update ===");
+        department = new Department(3, "Food");
+        departmentDao.update(department);
+        System.out.println("Department updated!");
     }
 }
