@@ -22,5 +22,10 @@ public class App2 {
         department = new Department(null, "Music");
         departmentDao.insert(department);
         System.out.println("Inserted! new id: " + department.getId());
+
+        System.out.println("=== Test 4: department delete ===");
+        Integer id = null;
+        departmentDao.deleteById(id);
+        System.out.println("Deleted!");
     }
 }
